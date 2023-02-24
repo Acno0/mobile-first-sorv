@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --ff-heading:'Staatliches', sans-serif;
+  --ff-texting:'Palanquin', sans-serif;
+
+  --bg-primary:#EFF1FF;
+  --bg-secondary: #8E9AAF;
+  --bg-terciary:#CBC0D3;
+  --bg-rosa:#FEEAFA;
+
+  --fc-primary:#FFFFFF;
+  --fc-secondary: #23053A;
+  --fc-tertiary:#4A4E69;
+
+  font-size: 62.5%;
+  --fz-header:4rem;
+  --fz-body:2rem;
+}
+body{
+  background-color:var(--bg-primary);
+  color: var(--fc-secondary);
+  font-family:var(--ff-texting);
+  font-size: var(--fz-body);
+
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 27.9rem;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background:var(--bg-secondary);
+  }
+
+header{
+  text-align: center;
+}
+header img{
+  margin: 3.2rem auto 2.4rem;
+    
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+
+}
+
+header h1 {
+  background-color: var(--bg-terciary);
+  color: var(--fc-primary);
+
+  font-family: var(--ff-heading);
+  font-size: var(--fz-header);
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  
+  text-align: center;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  width: 100%;
+  height: 4.9rem;
+}
+main{
+  width: 32rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.text{
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 30.5rem; 
+  margin: 4.5rem auto 6.3rem ;
+  
+}
+
+.card-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin: 0 auto;
+  
+}
+.card-1, .card-2{
+  position: relative;
+
+}
+.card-1 img, .card-2 img{
+  width: 32rem;
+  border-radius: 2rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.card-2 img{
+  height: 45rem;
+
+}
+
+main{
+  margin: auto;
+}
+.card-wrapper h2{
+  position: absolute;
+  border-radius: 2rem;
+  
+  top: 1rem;
+  right: 1.6rem;
+  width: fit-content;
+  height: 3.5rem;
+  padding:0 2.4rem ;
+
+  display: inline-flex;
+  align-items: center;
+
+  color: var(--fc-tertiary);
+  background-color: var(--bg-rosa);
+
+  font-family: var(--ff-heading);
+  font-size: var(--fz-body);
+  font-weight: 400;
+  
+  
+}
+
+
